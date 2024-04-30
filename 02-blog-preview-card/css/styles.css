@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #84763f; 
+    line-height: 1.4; /* Reducir el espacio entre líneas */
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #ffff7c 0, #ffff6f 12.5%, #fff565 25%, #ffda5c 37.5%, #f2bd53 50%, #dda14c 62.5%, #c98a46 75%, #b77642 87.5%, #a8663f 100%);
+    z-index: -1;
+}
+
+.card-container {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    max-width: 300px; /* Reduzco el ancho máximo de la tarjeta */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin-bottom: 20px; /* Reduzco el espaciado en la parte inferior de la tarjeta */
+    position: relative; /* Añado posición relativa para que la imagen tenga posición absoluta relativa a la tarjeta */
+    -webkit-box-shadow: 42px 36px 27px -6px rgba(0,0,0,0.98);
+    -moz-box-shadow: 42px 36px 27px -6px rgba(0,0,0,0.98);
+    box-shadow: 42px 36px 27px -6px rgba(0,0,0,0.98);
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img.round-image {
+    width: 30px; /* Reduzco el tamaño de la imagen */
+    height: 30px; /* Reduzco el tamaño de la imagen */
+    border-radius: 50%; /* Formo una imagen redonda */
+    position: absolute; /* Posiciono la imagen absolutamente */
+    bottom: -10px; /* La coloco 10px por encima del fondo de la tarjeta */
+    left: 0px; /* La coloco 10px por encima del inicio de la tarjeta */
+    margin-top: 5px; /* Reduzco el margen superior */
+}
+
+.author-info {
+    position: relative; /* Posiciono el contenedor relativamente */
+    display: inline-block; /* Asegura que ocupe solo el espacio necesario */
+}
+
+.card-link {
+    position: sticky; /* Posiciono el nombre absolutamente */
+    bottom: -10px; /* Lo coloco 10px por encima del fondo de la tarjeta */
+    left: 20px; /* Lo coloco a 50px del borde izquierdo de la tarjeta */
+    font-size: 10px; /* Ajusto el tamaño del texto */
+    color: #333; /* Cambio el color del texto */
+    margin-left: 40px; /* Añado margen izquierdo para separarlo de la imagen */
+    width: calc(100% - 100px); /* Ajusto el ancho para que el texto no choque con la imagen */
+}
+
+.card-link:hover {
+    color: #0056b3;
+}
+
+.card-content {
+    padding: 20px 20px 20px 20px;
+    padding-top: 0%;
+    margin-top: 0;
+    border: 5;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    line-height: 1.2; /* Reduzco el espacio entre líneas */
+}
+
+.card-title:hover {
+    color: #e3d084; 
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.4; /* Reduzco el espacio entre líneas */
+}
+
+.learning-highlight {
+    background: linear-gradient(to right, #84763f 0%, #f2e75f 100%);
+    color: #000000; /* Color de texto negro */
+    font-weight: bold; /* Texto en negrita */
+    padding: 2px 5px; /* Añado relleno alrededor del texto */
+    position: relative; /* Cambio la posición a relativa */
+    display: inline-block; /* Asegura que ocupe solo el espacio necesario */
+    transition: background-position 0.3s ease;
+}
+
+
+.card img.author-image {
+    width: 93.5%; /* Reducir el tamaño de la imagen */
+    margin: 10px 10px 0px ; /* Margen superior de 20px y 10px de margen derecho e izquierdo */
+}
+ h6 {
+    margin : 0px;
+}
