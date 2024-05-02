@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos dentro del contenedor se ajusten a la línea cuando no haya suficiente espacio */
+  align-items: flex-start; /* Alinear los elementos al principio del contenedor verticalmente */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  max-width: 20%; /* Ajustar el ancho máximo del contenedor al 100% */
+  min-width: 300px; /* Establecer un ancho mínimo para evitar que los elementos se reduzcan demasiado */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.white-text {
+  font-size: 16px;
+  display: inline-block;
+  background-color: black; /* Cambia el fondo a negro */
+  color: white; /* Cambia el color del texto a blanco */
+  padding: 0 5px; /* Ajusta el relleno según sea necesario */
+  border-radius: 3px; /* Opcional: agrega bordes redondeados */
+}
+
+
+.product-image {
+  flex: 1; /* Permitir que la imagen ocupe todo el ancho disponible */
+  margin-right: 20px; /* Aumentar el margen derecho para crear espacio entre la imagen y el contenido */
+  max-width: 40%; /* Establecer un ancho máximo para la imagen */
+  min-width: 200px; /* Establecer un ancho mínimo para la imagen */
+  overflow: hidden; /* Evitar que la imagen se desborde del contenedor */
+  display: flex; /* Alinear contenido de la imagen */
+  align-items: center; /* Centrar verticalmente la imagen */
+}
+
+.product-image img {
+  width: auto; /* Mantener el ancho original de la imagen */
+  max-width: 100%; /* Ajustar la imagen al ancho máximo permitido */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 5px;
+}
+
+.product-info {
+  flex: 1; /* Permitir que la información ocupe el espacio restante */
+}
+
+.product-info h2 {
+  margin-top: 0;
+}
+
+.first-btn {
+  background-color: #3c84f0;
+  color: #ffffff;
+  padding: 10px 0; /* Eliminar el relleno horizontal y ajustar el relleno vertical */
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+  margin-top: 10px; /* Añadir margen superior para separar el botón de otros elementos */
+}
+
+
+.first-btn:hover {
+  background-color: #0d3866;
+}
+
+.button-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.primary-btn {
+  background-color: #f0f0f0;
+  color: #0f0e0e;
+  padding: 10px 40px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.primary-btn i {
+  margin-right: 5px;
+}
+
+.primary-btn:hover {
+  background-color: #808080;
+  color: #ffffff;
+  border-color: #808080;
+}
+
+.secondary-btn {
+  background-color: #f0f0f0;
+  color: #0f0e0e;
+  padding: 10px 40px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.secondary-btn i {
+  margin-right: 5px;
+}
+
+.secondary-btn:hover {
+  background-color: #808080;
+  color: #ffffff;
+  border-color: #808080;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(59, 212, 59);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.prices {
+  display: inline-block;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.discounted-price {
+  font-size: 3.2em;
+  font-weight: bold;
+}
+
+.offer {
+  color: #666;
+}
