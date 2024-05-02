@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #222; /* Cambio de color de fondo a oscuro */
+    background-color: #222;
 }
 
 .container {
@@ -13,18 +13,18 @@ body {
 }
 
 .profile-card {
-    background-color: #333; /* Cambio de color de fondo a oscuro */
+    background-color: #333;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 250px; /* Reducción del ancho del cuadro que contiene la información */
+    width: 250px;
 }
 
 .profile-info {
     text-align: center;
-    background-color: #555; /* Color más claro para el contenedor de los datos */
+    background-color: #555;
     border-radius: 8px;
-    padding: 10px; /* Añadir un poco de espacio interior */
+    padding: 10px;
 }
 
 .profile-pic img {
@@ -37,33 +37,33 @@ body {
 .name {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* Cambio de color del texto a blanco */
+    color: #fff;
     margin-bottom: 3px;
 }
 
 .location {
     font-size: 14px;
-    color: #ccc; /* Cambio de color del texto a gris claro */
+    color: #ccc;
     margin-bottom: 5px;
 }
 
 .bio {
     font-size: 12px;
-    color: #bbb; /* Cambio de color del texto a gris claro */
+    color: #bbb;
     margin-bottom: 10px;
 }
 
 .social-icons-container {
-    background-color: #555; /* Color más claro para el contenedor de los iconos */
+    background-color: #555;
     border-radius: 8px;
-    padding: 5px; /* Añadir un poco de espacio interior */
+    padding: 5px;
     text-align: center;
-    margin-top: 5px; /* Agregar margen superior */
-    border-top: 1px solid #888; /* Agregar borde superior */
+    margin-top: 5px;
+    border-top: 1px solid #888;
 }
 
 .social-icons {
-    display: flex; /* Mostrar los iconos en una línea */
+    display: flex;
     justify-content: center;
 }
 
@@ -77,17 +77,17 @@ body {
 }
 
 .icon.twitter {
-    background-image: url('/icons/gorjeo.png');
+    background-image: url('icons/gorjeo.png');
 }
 
 .icon.linkedin {
-    background-image: url('/icons/linkedin.png');
+    background-image: url('icons/linkedin.png');
 }
 
 .icon.facebook {
-    background-image: url('/icons/facebook.png');
+    background-image: url('icons/facebook.png');
 }
 
 .icon:hover {
-    transform: scale(1.2); /* Escalar el icono al pasar el mouse */
+    transform: scale(1.2);
 }
