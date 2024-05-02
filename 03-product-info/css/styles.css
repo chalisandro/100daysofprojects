@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap; /* Permitir que los elementos dentro del contenedor se ajusten a la línea cuando no haya suficiente espacio */
   align-items: flex-start; /* Alinear los elementos al principio del contenedor verticalmente */
   justify-content: center; /* Centrar el contenido horizontalmente */
-  max-width: 20%; /* Ajustar el ancho máximo del contenedor al 100% */
+  max-width: 17%; /* Ajustar el ancho máximo del contenedor al 100% */
   min-width: 300px; /* Establecer un ancho mínimo para evitar que los elementos se reduzcan demasiado */
   background-color: #fff;
   padding: 20px;
