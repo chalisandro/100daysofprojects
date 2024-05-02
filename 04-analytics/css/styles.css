@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Merriweather;
   background-color: hwb(223 82% 6%); /* Color más bajo */
   margin: 0; /* Elimina los márgenes predeterminados */
   padding: 0; /* Corrige la sintaxis aquí */
@@ -11,27 +11,37 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 300px auto;
-  padding: 20px;
-  border-radius: 40px;
-  width: 700px; /* Ajusta el ancho de la tarjeta */
+  padding: 82px;
+  border-radius: 60px;
+  width: 966px; /* Ajusta el ancho de la tarjeta */
   overflow: hidden; /* Evita que el contenido se salga de la tarjeta */
   background-color: #fdfdfd; /* Color celeste claro */
   position: relative; /* Para posicionar el pseudoelemento con respecto al contenedor */
   box-shadow: 15px 15px  #E5EDFF;
+  gap: 56px;
 }
 .title-container {
   text-align: left; /* Alinea el contenido del título a la izquierda */
   align-self: flex-start;
   margin-left: 60px ;
   margin-top: 20px;
-  font-family: Merriweather, serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40.22px;
+}
+ .chart-container {
+  height: 400px;
+}
+.normal {
+  font-weight: normal; /* Esto quita la negrita */
 }
 
-
 .chart-text {
+  width: 1;
+  height: 54px;
   position: absolute;
-  top: 64%;
-  left: 23%;
+  top: 73%;
+  left: 27%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   color: #333; /* Color del texto */
@@ -44,9 +54,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 930px;
+  height: 209px;
+  gap: 79px;
 }
 
+#piechart {
+  width: 400px; /* Ajusta el ancho del piechart */
+  height: 400px; /* Ajusta la altura del piechart */
+  margin: auto;
+}
 
 .info-container ul li {
   display: flex;
@@ -55,13 +72,18 @@ body {
 }
 
 .info-container ul li strong {
-  width: 160px; /* Ancho mínimo para los nombres */
+  width: 269px; /* Ancho mínimo para los nombres */
   display: inline-block;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  line-height: 27px;
+  height: 27;
 }
 
 .bar-container {
-  width: 150px; /* Ajusta el ancho de la barra */
-  height: 5px; /* Altura reducida de la barra */
+  width: 206px; /* Ajusta el ancho de la barra */
+  height: 8px; /* Altura reducida de la barra */
   background-color: #ffffff; /* Color de fondo de la barra */
   border-radius: 5px; /* Radio de borde para la barra */
   overflow: hidden; /* Evita que el contenido se desborde */
@@ -74,6 +96,9 @@ body {
   background-color: #007bff; /* Color de la barra de porcentaje */
   width: 0; /* Ancho inicial de la barra de porcentaje */
   transition: width 0.5s ease; /* Transición suave del ancho de la barra */
+  width: 248px;
+  height: 27px;
+  gap: 8px;
 }
 .see-more {
   margin-top: 20px;
@@ -92,3 +117,4 @@ body {
 .percentage {
   width: 80px; /* Aumenta el ancho mínimo para los porcentajes */
 }
+

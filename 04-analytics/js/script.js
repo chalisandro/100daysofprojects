@@ -16,15 +16,11 @@ function drawChart() {
     ]);
 
     var options = {
-        pieHole: 0.8,
-        width: 300,
-        height: 300,
+        pieHole: 0.79,
+        width: 406,
+        height: 406,
         legend: 'none',
         pieSliceText: 'label',
-        pieSliceTextStyle: {
-            color: 'black',
-            fontSize: 14
-        },
         tooltip: {textStyle: {color: '#333'}, showColorCode: true},
         colors: ['#1A52E1', '#4473EA', '#6792FF', '#96B3FF'] // Celeste y tonos más bajos
     };
