@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hwb(223 82% 6%); /* Color más bajo */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Corrige la sintaxis aquí */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 300px auto;
+  padding: 20px;
+  border-radius: 40px;
+  width: 700px; /* Ajusta el ancho de la tarjeta */
+  overflow: hidden; /* Evita que el contenido se salga de la tarjeta */
+  background-color: #fdfdfd; /* Color celeste claro */
+  position: relative; /* Para posicionar el pseudoelemento con respecto al contenedor */
+  box-shadow: 15px 15px  #E5EDFF;
+}
+.title-container {
+  text-align: left; /* Alinea el contenido del título a la izquierda */
+  align-self: flex-start;
+  margin-left: 60px ;
+  margin-top: 20px;
+}
+
+
+.chart-text {
+  position: absolute;
+  top: 64%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #333; /* Color del texto */
+  font-weight: bold;
+}
+
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.info-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container ul li strong {
+  width: 160px; /* Ancho mínimo para los nombres */
+  display: inline-block;
+}
+
+.bar-container {
+  width: 150px; /* Ajusta el ancho de la barra */
+  height: 5px; /* Altura reducida de la barra */
+  background-color: #ffffff; /* Color de fondo de la barra */
+  border-radius: 5px; /* Radio de borde para la barra */
+  overflow: hidden; /* Evita que el contenido se desborde */
+  direction: rtl; /* Cambia la dirección del texto de derecha a izquierda */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.bar {
+  height: 100%; /* Altura de la barra de porcentaje */
+  background-color: #007bff; /* Color de la barra de porcentaje */
+  width: 0; /* Ancho inicial de la barra de porcentaje */
+  transition: width 0.5s ease; /* Transición suave del ancho de la barra */
+}
+.see-more {
+  margin-top: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.info-container ul li {
+  margin-bottom: 20px; /* Aumenta el espacio entre cada atributo y porcentaje */
+}
+
+.info-container ul li strong {
+  width: 180px; /* Aumenta el ancho mínimo para los nombres */
+}
+
+.percentage {
+  width: 80px; /* Aumenta el ancho mínimo para los porcentajes */
+}

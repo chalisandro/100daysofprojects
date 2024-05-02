@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Sources</title>
+    <link rel="stylesheet" type="text/css" href="../04-analytics/css/styles.css">
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../04-analytics/js/script.js"></script>
+    
+</head>
+<body>
+    <div class="card">
+        
+        <div id="title-container" class="title-container">
+            <!-- Title and concept -->
+            <h1>Traffic Sources Types</h1>
+            <p>Views - Last 28 days</p>
+        </div>
+        <div class="content-container">
+            <!-- Display the pie chart -->
+            <div class="chart-container">
+                <div id="piechart"></div>
+                <div class="chart-text">_Traffic_ <br>Sources</div>
+            </div>
+            
+            <!-- Information about traffic sources -->
+            <div class="info-container">
+                <ul>
+                    <li>
+                        <strong>Channel Pages:</strong>
+                        <div class="bar-container">
+                            <div id="channel-pages-bar" class="bar"></div>
+                        </div>
+                        <span id="channel-pages"></span>
+                    </li>
+                    <li>
+                        <strong>Direct or Unknown:</strong>
+                        <div class="bar-container">
+                            <div id="direct-unknown-bar" class="bar"></div>
+                        </div>
+                        <span id="direct-unknown"></span>
+                    </li>
+                    <li>
+                        <strong>Search:</strong>
+                        <div class="bar-container">
+                            <div id="search-bar" class="bar"></div>
+                        </div>
+                        <span id="search"></span>
+                    </li>
+                    <li>
+                        <strong>External:</strong>
+                        <div class="bar-container">
+                            <div id="external-bar" class="bar"></div>
+                        </div>
+                        <span id="external"></span>
+                    </li>
+                    
+                </ul>
+                <div class="see-more">
+                    <a href="#">See More</a>
+                </div>
+            </div>
+        </div>
+        <!-- See More link -->
+       
+    </div>
+</body>
+</html>
